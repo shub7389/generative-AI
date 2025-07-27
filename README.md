@@ -1,6 +1,5 @@
 # generative-AI
 Repository to collect all my POC's on the generative AI and also to generate synthetic data.
-
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="External Agent Card" name="sn_aia_external_agent_card_lab" type="collection" extends="sys_metadata" attributes="update_synch=true" read_access="true" create_access="true" update_access="true" delete_access="true" ws_access="true" client_scripts_access="true">
