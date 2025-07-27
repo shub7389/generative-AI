@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="External Agent Card" name="sn_aia_external_agent_card_lab" type="collection" extends="sys_metadata" attributes="update_synch=true" read_access="true" create_access="true" update_access="true" delete_access="true" ws_access="true" client_scripts_access="true">
+        <element label="Name" name="name" type="string" max_length="100"/>
+        <element label="URL" name="url" type="string" max_length="500"/>
+        <element label="Description" name="description" type="string" max_length="2000"/>
+        <element label="Version" name="version" type="string" max_length="100"/>
+        <element label="Details" name="details" max_length="8000" type="json" default_value="{}"/>
+        <element label="Discovery Provider" name="discovery_provider"  type="reference" reference="sn_aia_external_agent_discovery_lab"/>
+        <element label="Agent" name="agent"  type="reference" reference="sn_aia_agent"/>
+        <element label="Domain" max_length="32" name="sys_domain" type="domain_id"/>
+    </element>
+</database>
